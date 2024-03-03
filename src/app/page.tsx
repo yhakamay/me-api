@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-8 lg:p-12 prose">
@@ -16,6 +18,29 @@ export default function Home() {
         </a>
         .
       </p>
+      <h2>Catalog</h2>
+      <ul>
+        <li>
+          <Link href="/top-repos">Top repos</Link>
+          <div className="badge badge-outline badge-success ml-2 my-0">New</div>
+        </li>
+        <li>
+          Zenn articles
+          <div className="badge ml-2 my-0">Coming Soon</div>
+        </li>
+        <li>
+          My availability
+          <div className="badge ml-2 my-0">Coming Soon</div>
+        </li>
+        <li>
+          My wheather
+          <div className="badge ml-2 my-0">Coming Soon</div>
+        </li>
+        <li>
+          My clips
+          <div className="badge ml-2 my-0">Coming Soon</div>
+        </li>
+      </ul>
     </main>
   );
 }
