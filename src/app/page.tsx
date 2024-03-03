@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-8 lg:p-12 prose">
@@ -16,6 +18,12 @@ export default function Home() {
         </a>
         .
       </p>
+      <h2>Catalog</h2>
+      <ul>
+        <li>
+          <Link href="/top-repos">Top Repos</Link>
+        </li>
+      </ul>
     </main>
   );
 }
